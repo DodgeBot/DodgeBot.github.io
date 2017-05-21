@@ -26,18 +26,19 @@
 <h3>
 <a id="background" class="anchor" href="#background" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background</h3>
 
-<p>Autonomous navigation and collision avoidance are challenging and still remain unsolved for robotics. Solutions to such problems are essential to many robotic applications including service robots, Last-Mile-Delivery and postdisaster search and rescue. In order to successfully navigate along a path and avoid pedestrians at the same time, the robot needs to perceive where the path is leading and where the pedestrians are. Based on those information, the robot can then react in order to stay on the path and avoid collision with human beings. In this project, we propose a machine-learning approach to tackle such problems and show preliminary results   on an autonomous mobile robot.
+<p>Autonomous navigation and collision avoidance are challenging and still remain unsolved for robotics. Solutions to such problems are essential to many robotic applications including service robots, Last-Mile-Delivery and postdisaster search and rescue. In order to successfully navigate along a path and avoid pedestrians at the same time, the robot needs to perceive where the path is leading and where the pedestrians are. Based on those information, the robot can then react in order to stay on the path and avoid collision with human beings. In this project, we propose a machine-learning approach to tackle such problems and show preliminary results on an autonomous mobile robot.
 </p>
 
 <h3>
-<a id="problem-statement" class="anchor" href="#problem-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem Statement</h3>
+<a id="motivation" class="anchor" href="#problem-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motivation</h3>
 
-<p>In a dynamic environment, an agent should make fast decision of movement according to visual input. Therefore we will use deep learning and produce an end-to-end decision making neural network that does not depend on or use minimal object recognition in computer vision.</p>
+<p>
+Path following and pedestrian avoidance for mobile robots are extremely difficult tasks yet interesting and rewarding problems to solve. The traditional solutions mainly resort to Computer vision approach using object recognition and motion tracking. The latter is a significantly more difficult problem than the former because the depth information is hard to retrieve without the help of expensive depth sensors. In addition, the prediction accuracy depends heavily on the correctness of object detection and recognition. In this project, we consider Deep Learning technique as an alternative to Computer Vision approach, which maps the vision input directly to the motor output in a so-called End-to-End manner. By doing so, we expect to take advantage of the generality of neural networks.</p>
 
 <h3>
 <a id="scope" class="anchor" href="#scope" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scope</h3>
 
-<p>This project particularly serves as one component of Simultaneous Localization and Mapping (SLAM) infrastructure). We will focus on tuning the neural network for better performance in indoor environment and assume there is only one agent that is using such network in the environment.</p>
+<p>In this project, we focus on path following and pedestrian avoidance problems for a mobile robot. The problems are restricted to indoor navigation with only a monocular RGB camera as input. However, for safety reasons, the robot will be equipped with distance sensors, for example, ultrasonic sensors, to prevent the robot from colliding with obstacles outside the view of the camera.</p>
 
 <h3>
 <a id="video" class="anchor" href="#video" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo 1 (open space test)</h3>
